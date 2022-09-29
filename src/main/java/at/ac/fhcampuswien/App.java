@@ -6,7 +6,6 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-
         System.out.println("Hello World!");
     }
 
