@@ -64,7 +64,7 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here
+        // input your solution here now
     }
 
     //todo Task 7
