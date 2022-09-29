@@ -1,11 +1,12 @@
 package at.ac.fhcampuswien;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
+
         System.out.println("Hello World!");
     }
 
