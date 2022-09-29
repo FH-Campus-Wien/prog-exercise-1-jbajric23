@@ -1,33 +1,65 @@
 package at.ac.fhcampuswien;
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-
         System.out.println("Hello World!");
     }
 
     //todo Task 2
     public void helloRobot(){
-        // input your solution here
+        System.out.println("0123456789012345678901");
+        System.out.println("         __");
+        System.out.println(" _(\\    |@@|");
+        System.out.println("(__/\\__ \\--/ __");
+        System.out.println("   \\___|----|  |   __");
+        System.out.println("       \\ }{ /\\ )_ / _\\");
+        System.out.println("       /\\__/\\ \\__O (__");
+        System.out.println("      (--/\\--)    \\__/");
+        System.out.println("      _)(  )(_");
+        System.out.println("     `---''---`");
     }
 
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+
+        char char1 = 'Z';
+        int int1 = char1;
+        int int2 = (int) 44e-1f;
+        int int3 = (int) 5.5f;
+        int int4 = Integer.valueOf(012);
+        int int5 = Integer.decode("0xface");
+        int int6 = (int) 80L;
+        int int7 = (int) 8.88e1;
+        int int8 = (int) 99.9;
+        int sum = int1+int2+int3+int4+int5+int6+int7+int8;
+        System.out.println(sum);
     }
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+        Scanner scanner1 = new Scanner(System.in);
+        int num1 = scanner1.nextInt();
+        int num2 = scanner1.nextInt();
+        int plus = num1 + num2;
+        System.out.println(plus);
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+        Scanner scanner2 = new Scanner(System.in);
+        int x = scanner2.nextInt();
+        int y = scanner2.nextInt();
+        System.out.println("Before Swap:");
+        System.out.println("x: y: After Swap:");
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
     }
 
     //todo Task 6
