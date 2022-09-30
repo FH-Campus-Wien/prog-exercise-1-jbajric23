@@ -41,18 +41,18 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
-        Scanner scanner1 = new Scanner(System.in);
-        int num1 = scanner1.nextInt();
-        int num2 = scanner1.nextInt();
+        Scanner scanner4 = new Scanner(System.in);
+        int num1 = scanner4.nextInt();
+        int num2 = scanner4.nextInt();
         int plus = num1 + num2;
         System.out.println(plus);
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
-        Scanner scanner2 = new Scanner(System.in);
-        int x = scanner2.nextInt();
-        int y = scanner2.nextInt();
+        Scanner scanner5 = new Scanner(System.in);
+        int x = scanner5.nextInt();
+        int y = scanner5.nextInt();
         System.out.println("Before Swap:");
         System.out.println("x: y: After Swap:");
         x = x + y;
@@ -64,7 +64,16 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here now
+        Scanner scanner6 = new Scanner(System.in);
+        int n1 = scanner6.nextInt();
+        int n2 = scanner6.nextInt();
+        if (n1 > n2) {
+            System.out.println("n1: n2: n1 > n2");
+        } else if (n2 > n1) {
+            System.out.println("n1: n2: n2 > n1");
+        } else {
+            System.out.println("n1: n2: n1 == n2");
+        }
     }
 
     //todo Task 7
