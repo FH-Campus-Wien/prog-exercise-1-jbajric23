@@ -78,12 +78,24 @@ public class App {
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        Scanner scanner7 = new Scanner(System.in);
+        int salary = scanner7.nextInt();
+        if (salary < 0 || salary >= 100000) {
+            System.out.println("Enter annual Revenue: Invalid Revenue");
+        } else if (salary >= 0 && salary < 20000) {
+            System.out.println("Enter annual Revenue: Poor Sales Revenue");
+        } else if (salary >= 20000 && salary < 50000) {
+            System.out.println("Enter annual Revenue: Average Sales Revenue");
+        } else if (salary >= 50000 && salary < 80000) {
+            System.out.println("Enter annual Revenue: Good Sales Revenue");
+        } else if (salary >= 80000 && salary < 100000) {
+            System.out.println("Enter annual Revenue: Excellent Revenue");
+        }
     }
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+
     }
 
     //todo Task 9
