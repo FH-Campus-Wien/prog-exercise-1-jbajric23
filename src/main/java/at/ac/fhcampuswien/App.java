@@ -118,12 +118,37 @@ public class App {
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        int syear, div4, div100, div400;
+        Scanner scanner9 = new Scanner(System.in);
+        syear = scanner9.nextInt();
+        div4 = syear%4;
+        div100 = syear%100;
+        div400 = syear%400;
+        if (div4 != 0) {
+            System.out.println("Year: Not a Leapyear");
+        } else if (div100 != 0) {
+            System.out.println("Year: Leapyear");
+        } else if (div400 == 0) {
+            System.out.println("Year: Leapyear");
+        } else {
+            System.out.println("Year: Not a Leapyear");
+        }
+
     }
 
     //todo Task 10
-    public void transposedNumbers(){
-        // input your solution here
+    public void transposedNumbers() {
+
+        int rev = 0;
+        while(num != 0) {
+
+
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+
+        System.out.println("Reversed Number: " + reversed);
     }
 
 
