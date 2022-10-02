@@ -95,7 +95,25 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
-
+        Scanner scanner8 = new Scanner(System.in);
+        int prov = scanner8.nextInt();
+        switch (prov) {
+            case 1:
+                System.out.println("Enter CommissionClass: Your Commission Rate was set to 0.01");
+                 break;
+            case 2:
+                System.out.println("Enter CommissionClass: Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Enter CommissionClass: Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Enter CommissionClass: Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Enter CommissionClass: Your Commission Rate was set to 0.0");
+                break;
+        }
     }
 
     //todo Task 9
