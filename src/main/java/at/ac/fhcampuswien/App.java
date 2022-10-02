@@ -138,17 +138,16 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers() {
-
+        int num;
+        Scanner scanner10 = new Scanner(System.in);
+        num = scanner10.nextInt();
         int rev = 0;
         while(num != 0) {
-
-
-            int digit = num % 10;
-            reversed = reversed * 10 + digit;
+            int div = num % 10;
+            rev = rev * 10 + div;
             num /= 10;
         }
-
-        System.out.println("Reversed Number: " + reversed);
+        System.out.println("Number: " + rev);
     }
 
 
