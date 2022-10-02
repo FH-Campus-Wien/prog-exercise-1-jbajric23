@@ -6,11 +6,13 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
+        // Print to console via System.out.println()
         System.out.println("Hello World!");
     }
 
     //todo Task 2
     public void helloRobot(){
+        // Print to console via System.out.println() and spaces
         System.out.println("0123456789012345678901");
         System.out.println("         __");
         System.out.println(" _(\\    |@@|");
@@ -25,7 +27,7 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
-
+        // decoding via conv to int, (int), Integer.valueOf() and Integer.decode() --> Sum with operator +
         char char1 = 'Z';
         int int1 = char1;
         int int2 = (int) 44e-1f;
@@ -41,6 +43,7 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
+        // User input via scanner and converting to int via nextInt()
         Scanner scanner4 = new Scanner(System.in);
         int num1 = scanner4.nextInt();
         int num2 = scanner4.nextInt();
@@ -50,11 +53,13 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
+        // User input via scanner
         Scanner scanner5 = new Scanner(System.in);
         int x = scanner5.nextInt();
         int y = scanner5.nextInt();
         System.out.println("Before Swap:");
         System.out.println("x: y: After Swap:");
+        // Swapping with operators "+", "-" and "="
         x = x + y;
         y = x - y;
         x = x - y;
@@ -64,9 +69,11 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
+        // User input via scanner
         Scanner scanner6 = new Scanner(System.in);
         int n1 = scanner6.nextInt();
         int n2 = scanner6.nextInt();
+        // Checking and comparing with if(), else-if(), else and ">"
         if (n1 > n2) {
             System.out.println("n1: n2: n1 > n2");
         } else if (n2 > n1) {
@@ -78,8 +85,10 @@ public class App {
 
     //todo Task 7
     public void ratingSalesPerson(){
+        // User input via scanner
         Scanner scanner7 = new Scanner(System.in);
         int salary = scanner7.nextInt();
+        // Controlling and comparing with if(), else-if(), "<", ">=", "||" and "&&"
         if (salary < 0 || salary >= 100000) {
             System.out.println("Enter annual Revenue: Invalid Revenue");
         } else if (salary >= 0 && salary < 20000) {
@@ -95,8 +104,10 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
+        // User input via Scanner
         Scanner scanner8 = new Scanner(System.in);
         int prov = scanner8.nextInt();
+        // Controlling and checking cases 1-4(User input) and default via switch
         switch (prov) {
             case 1:
                 System.out.println("Enter CommissionClass: Your Commission Rate was set to 0.01");
@@ -119,11 +130,14 @@ public class App {
     //todo Task 9
     public void leapyear(){
         int syear, div4, div100, div400;
+        // User input via Scanner
         Scanner scanner9 = new Scanner(System.in);
         syear = scanner9.nextInt();
+        // Calculating variables with operator "%"
         div4 = syear%4;
         div100 = syear%100;
         div400 = syear%400;
+        // Checking cases via if, else-if and else
         if (div4 != 0) {
             System.out.println("Year: Not a Leapyear");
         } else if (div100 != 0) {
@@ -142,6 +156,7 @@ public class App {
         Scanner scanner10 = new Scanner(System.in);
         num = scanner10.nextInt();
         int rev = 0;
+        // while-loop to reverse numbers with variables div, num and rev
         while(num != 0) {
             int div = num % 10;
             rev = rev * 10 + div;
