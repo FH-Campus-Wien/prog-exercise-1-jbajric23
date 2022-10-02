@@ -27,7 +27,7 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
-        // decoding via conv to int, (int), Integer.valueOf() and Integer.decode() --> Sum with operator +
+        // decoding via conv to int, (int), Integer.valueOf() and Integer.decode() -> Sum with operator +
         char char1 = 'Z';
         int int1 = char1;
         int int2 = (int) 44e-1f;
